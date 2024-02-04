@@ -13,7 +13,7 @@ export class FirstComponentComponent implements OnInit {
 car={
   name: 'Honda',
   year: 1998,
-  transmition: 'Automático',
+  transmition: ['Automático', 'Manual'],
 };
 
   constructor() { }
