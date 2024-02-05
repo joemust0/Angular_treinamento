@@ -12,7 +12,7 @@
     <br>
         <h2>Carros:</h2>
     <ul>
-        <li [ngClass]="underline" *ngFor="let car of cars">
+        <li *ngFor="let car of cars">
             Fabricante: {{car.fabricante}} - Modelo: {{car.model}} - Categoria: {{car.type}}
         </li>
     </ul>

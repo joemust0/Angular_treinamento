@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Animal } from 'src/app/Animal';
+import { Car } from 'src/app/Cars';
 import { ListService } from 'src/app/services/list.service';
 
 @Component({
@@ -8,33 +9,27 @@ import { ListService } from 'src/app/services/list.service';
   styleUrls: ['./list-render.component.css']
 })
 export class ListRenderComponent implements OnInit{
-  animals: Animal[] = [
-    {name: "Lilica", type: "Cachorro", age: 4},
-    {name: "Lua", type: "Gato", age: 5},
-    {name: "Floquino", type: "Cachorro", age: 2},
-    {name: "Spok", type: "Cachorro", age: 10},
-    {name: "Thor", type: "Cavalo", age: 7},
-    {name: "Theodoro", type: "Coelho", age: 1},
-  ];
+  animals: Animal[] = [];
 
   animal: Animal = {
     name: 'teste',
     type: 'Alguma coiosa',
     age: 10,
   }
-cars= [
-  {fabricante: "Honda", model: "Civic", type: "Coupe"},
-  {fabricante: "Honda", model: "Accord", type: "sedan"},
-  {fabricante: "Honda", model: "CRV", type: "SUV"},
-  {fabricante: "Toyota", model: "Corrola", type: "sedan"},
-  {fabricante: "Toyota", model: "Hilux", type: "Pick-Up"},
-  {fabricante: "VolksWagen", model: "Gol", type: "hatch"},
-  {fabricante: "VolksWagen", model: "Polo", type: "hatch"},
-];
+cars: Car[] = [];
+
+car: Car = {
+  fabricante: 'honda',
+  model: 'civic',
+  type: 'sedan',
+}
 
 animalDetails = '';
 
-constructor(private listService:ListService) { }
+constructor(private listService:ListService) { 
+  this.getAnimals()
+  this.getCars()
+}
 
   ngOnInit(): void {  }
 
@@ -47,5 +42,14 @@ constructor(private listService:ListService) { }
   removeAnimal(animal:Animal){
     console.log('Removendo animnal....')
     this.animals = this.listService.remove(this.animals,animal);
+  }
+
+  getAnimals(): void{
+    this.listService.getAll().subscribe((animals) => (this.animals = animals));
+  }
+
+  getCars(): void {
+    this.listService.getAll2().subscribe((cars) =>(this.cars = cars));
+
   }
 }
