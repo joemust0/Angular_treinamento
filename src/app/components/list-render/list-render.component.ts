@@ -15,6 +15,11 @@ export class ListRenderComponent implements OnInit{
     {name: "Theodoro", type: "Coelho", age: 1},
   ];
 
+  animal: Animal = {
+    name: 'teste',
+    type: 'Alguma coiosa',
+    age: 10,
+  }
 cars= [
   {fabricante: "Honda", model: "Civic", type: "Coupe"},
   {fabricante: "Honda", model: "Accord", type: "sedan"},
@@ -25,7 +30,7 @@ cars= [
   {fabricante: "VolksWagen", model: "Polo", type: "hatch"},
 ];
 
-animalDetails = ''
+animalDetails = '';
 
 constructor() { }
 
@@ -33,6 +38,7 @@ constructor() { }
 
   underline = 'underline';
 
-  showAge(animal: Animal) { }
+  showAge(animal: Animal) { 
     this.animalDetails = `O pet ${animal.name} tem ${animal.age} anos!`;
+  }
 }
