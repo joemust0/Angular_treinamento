@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,7 @@ import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipeComponent } from './components/pipe/pipe.component';
+import { TwoAwayBlindingComponent } from './components/two-away-blinding/two-away-blinding.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { PipeComponent } from './components/pipe/pipe.component';
     EmitterComponent,
     ChangeNumberComponent,
     ListRenderComponent,
-    PipeComponent
+    PipeComponent,
+    TwoAwayBlindingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
