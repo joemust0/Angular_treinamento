@@ -29,8 +29,9 @@ constructor(private listService:ListService) {
   }
 
   removeAnimal(animal:Animal){
-    console.log('Removendo animnal....')
-    this.animals = this.listService.remove(this.animals,animal);
+    
+    this.animals = this.animals.filter((a) => animal.name!== a.name);
+    this.listService.remove(animal.id).subscribe();
   }
 
   getAnimals(): void{

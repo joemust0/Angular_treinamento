@@ -1,21 +1,84 @@
 {
-    "animals":[
-    {"id": 1, "name": "Lilica", "type": "Cachorro", "age": 4},
-    {"id": 2, "name": "Lua", "type": "Gato", "age": 5},
-    {"id": 3, "name": "Floquino", "type": "Cachorro", "age": 2},
-    {"id": 4, "name": "Spok", "type": "Cachorro", "age": 10},
-    {"id": 5, "name": "Thor", "type": "Cavalo", "age": 7},
-    {"id": 6, "name": "Theodoro", "type": "Coelho", "age": 1}
+  "animals": [
+    {
+      "id": "1",
+      "name": "Lilica",
+      "type": "Cachorro",
+      "age": 4
+    },
+    {
+      "id": "3",
+      "name": "Floquino",
+      "type": "Cachorro",
+      "age": 2
+    },
+    {
+      "id": "4",
+      "name": "Spok",
+      "type": "Cachorro",
+      "age": 10
+    },
+    {
+      "id": "5",
+      "name": "Thor",
+      "type": "Cavalo",
+      "age": 7
+    },
+    {
+      "id": "6",
+      "name": "Theodoro",
+      "type": "Coelho",
+      "age": 1
+    }
   ],
-
-  "cars":[
-    {"id": 1, "fabricante": "Honda", "model": "Civic", "type": "Coupe"},
-    {"id": 2,"fabricante": "Honda", "model": "Accord", "type": "sedan"},
-    {"id": 3,"fabricante": "Honda", "model": "CRV", "type": "SUV"},
-    {"id": 4,"fabricante": "Toyota", "model": "Corrola", "type": "sedan"},
-    {"id": 5,"fabricante": "Toyota", "model": "Hilux", "type": "Pick-Up"},
-    {"id": 6,"fabricante": "VolksWagen", "model": "Gol", "type": "hatch"},
-    {"id": 7,"fabricante": "Ford", "model": "Focus", "type": "hatch"},
-    {"id": 8,"fabricante": "VolksWagen", "model": "Polo", "type": "hatch"}
+  "cars": [
+    {
+      "id": "1",
+      "fabricante": "Honda",
+      "model": "Civic",
+      "type": "Coupe"
+    },
+    {
+      "id": "2",
+      "fabricante": "Honda",
+      "model": "Accord",
+      "type": "sedan"
+    },
+    {
+      "id": "3",
+      "fabricante": "Honda",
+      "model": "CRV",
+      "type": "SUV"
+    },
+    {
+      "id": "4",
+      "fabricante": "Toyota",
+      "model": "Corrola",
+      "type": "sedan"
+    },
+    {
+      "id": "5",
+      "fabricante": "Toyota",
+      "model": "Hilux",
+      "type": "Pick-Up"
+    },
+    {
+      "id": "6",
+      "fabricante": "VolksWagen",
+      "model": "Gol",
+      "type": "hatch"
+    },
+    {
+      "id": "7",
+      "fabricante": "Ford",
+      "model": "Focus",
+      "type": "hatch"
+    },
+    {
+      "id": "8",
+      "fabricante": "VolksWagen",
+      "model": "Polo",
+      "type": "hatch"
+    }
   ]
 }
