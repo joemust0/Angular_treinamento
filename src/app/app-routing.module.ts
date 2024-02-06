@@ -9,6 +9,7 @@ import { EventosComponent } from './components/eventos/eventos.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 import { TwoAwayBlindingComponent } from './components/two-away-blinding/two-away-blinding.component';
+import { ItemDatailComponent } from './Components/item-datail/item-datail.component';
 
 const routes: Routes = [
   {path: '', component: FirstComponentComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'emitter', component: EmitterComponent},
   {path: 'pipe', component: PipeComponent},
   {path: 'TAB', component: TwoAwayBlindingComponent},
+  {path: 'list/:id', component: ItemDatailComponent},
 ];
 
 @NgModule({

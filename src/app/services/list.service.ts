@@ -22,4 +22,13 @@ private apiUrl2 = 'http://localhost:3000/cars'
   getAll2(): Observable<Car[]> {
     return this.http.get<Car[]>(this.apiUrl2)
   }
+
+  getItem(id:number): Observable<Animal> {
+    return this.http.get<Animal>(`${this.apiUrl}/${id}`);
+  }
+
+  getProp(id:number): Observable<Car> {
+    return this.http.get<Car>(`${this.apiUrl2}/${id}`);
+  }
+
 }

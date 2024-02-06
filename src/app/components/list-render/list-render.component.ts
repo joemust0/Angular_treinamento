@@ -11,23 +11,12 @@ import { ListService } from 'src/app/services/list.service';
 export class ListRenderComponent implements OnInit{
   animals: Animal[] = [];
 
-  animal: Animal = {
-    name: 'teste',
-    type: 'Alguma coiosa',
-    age: 10,
-  }
-cars: Car[] = [];
-
-car: Car = {
-  fabricante: 'honda',
-  model: 'civic',
-  type: 'sedan',
-}
+  cars: Car[] = [];
 
 animalDetails = '';
 
 constructor(private listService:ListService) { 
-  this.getAnimals()
+  this.getAnimals();
   this.getCars()
 }
 

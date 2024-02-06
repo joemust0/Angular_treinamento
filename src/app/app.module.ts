@@ -15,6 +15,7 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipeComponent } from './components/pipe/pipe.component';
 import { TwoAwayBlindingComponent } from './components/two-away-blinding/two-away-blinding.component';
+import { ItemDatailComponent } from './Components/item-datail/item-datail.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TwoAwayBlindingComponent } from './components/two-away-blinding/two-awa
     ChangeNumberComponent,
     ListRenderComponent,
     PipeComponent,
-    TwoAwayBlindingComponent
+    TwoAwayBlindingComponent,
+    ItemDatailComponent
   ],
   imports: [
     BrowserModule,
